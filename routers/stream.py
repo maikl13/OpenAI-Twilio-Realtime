@@ -4,6 +4,7 @@ import json
 import logging
 import traceback
 import os
+from pydantic import BaseModel
 from dotenv import load_dotenv
 from fastapi import Request, WebSocket, WebSocketDisconnect, APIRouter
 from helpers.twilio import twilio_stream, initiate_twilio_call
